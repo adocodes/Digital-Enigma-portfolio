@@ -149,7 +149,7 @@ body {
   font-size: 1.6rem;
 }
 
-.btn-send {
+.btn-btn-secondary {
   background-color: #ecba27;
   padding: 0.8rem 1.5rem;
   border-radius: 0.5rem;
@@ -351,87 +351,82 @@ body {
   }
 }
 
-.hero {
-	background-image: url("https://imgur.com/a/EK15jSp");
-	background-size: cover;
-	height: 420px;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+.bg-image {
+  /* The image used */
+  background-image: url("IMG-5743.JPG");
+
+  /* Full height */
+  height: 9%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.button {
-	background-color: blue;
-	border: 2px solid white;
-	border-radius: 30px;
-	text-decoration: none;
-	padding: 10px 28px;
-	color: white;
-	margin-top: 10px;
-	display: inline-block;
-	&:hover {
-		background-color: white;
-		color: blue;
-		border: 2px solid $blue;
-	}
+.login-box{
+  width: 700px;
+  margin-top: 50px;
+  height: 620px;
+  background: rgba(0,0,0,0.4) ;
+  color: white;
+  top: 50%;
+  left: 25%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
 }
 
-.card-container {
-	max-width: 800px;
-	margin: 50px auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.login-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1c8adb;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #39dc79;
+  color: #000;
 }
 
-.card {
-	height: 300px;
-	width: 230px;
-	border: 1px solid darkgray;
-	border-radius: 3px;
-	margin: 10px;
+.login-box a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
 }
-
-.bg-modal {
-	background-color: rgba(0, 0, 0, 0.8);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	display: none;
-	justify-content: center;
-	align-items: center;
-}
-
-.modal-contents {
-	height: 300px;
-	width: 500px;
-	background-color: white;
-	text-align: center;
-	padding: 20px;
-	position: relative;
-	border-radius: 4px;
-}
-
-input {
-	margin: 15px auto;
-	display: block;
-	width: 50%;
-	padding: 8px;
-	border: 1px solid gray;
-}
-
-.close {
-	position: absolute;
-	top: 0;
-	right: 10px;
-	font-size: 42px;
-	color: #333;
-	transform: rotate(45deg);
-	cursor: pointer;
-	&:hover {
-		color: #666;
-  }
+.login-box a:hover
+{
+  color: #39dc79;
 }
